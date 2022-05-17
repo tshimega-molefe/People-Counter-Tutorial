@@ -2,9 +2,9 @@
 const log = console.log;
 
 let count = 0;
+let countEl = document.getElementById("count");
 
 function increment() {
   count = count + 1;
-  document.getElementById("count").innerText = count;
+  countEl.innerText = count;
 }
-console.log(count);
