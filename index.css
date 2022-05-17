@@ -82,24 +82,19 @@ h5 {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
-
 h1 {
   margin-top: 0;
   font-size: 3.052rem;
 }
-
 h2 {
   font-size: 2.441rem;
 }
-
 h3 {
   font-size: 1.953rem;
 }
-
 h4 {
   font-size: 1.563rem;
 }
-
 h5 {
   font-size: 1.25rem;
 }
@@ -109,7 +104,6 @@ small,
 .text-small {
   font-size: var(--smallText);
 }
-
 a {
   text-decoration: none;
 }
@@ -117,9 +111,27 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-
 .img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+/* Buttons */
+.button {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primaryColorDark);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.button:hover {
+  background: var(--primaryColorLight);
+  box-shadow: var(--shadow-3);
 }
