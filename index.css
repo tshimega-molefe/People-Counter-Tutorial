@@ -14,9 +14,13 @@
   --primaryColorLight: hsl(0, 80%, 40%);
   --primaryColorMedium: hsl(0, 70%, 30%);
   --primaryColorDark: hsl(0, 60%, 20%);
+  --secondaryColorLight: hsl(190, 80%, 40%);
+  --secondaryColorMedium: hsl(190, 70%, 30%);
+  --secondaryColorDark: hsl(190, 60%, 20%);
 
   /* Accent Color */
-  --AccentColor: hsl(200, 65%, 25%);
+  --AccentColor25: hsl(200, 65%, 25%);
+  --AccentColor50: hsl(200, 65%, 50%);
   /* Standard colors */
   --black: hsl(0, 0%, 00%);
   --white: hsl(0, 0%, 100%);
@@ -127,7 +131,7 @@ ul {
 }
 
 /* Buttons */
-.button {
+button {
   cursor: pointer;
   color: var(--white);
   background: var(--primaryColorDark);
@@ -141,7 +145,29 @@ ul {
   display: inline-block;
 }
 
-.button:hover {
+button:active {
+  color: var(--black);
+}
+
+#inc-button {
+  background: var(--AccentColor25);
+
+}
+
+#save-button {
+  background: var(--AccentColor50);
+
+}
+
+button:hover {
   background: var(--primaryColorLight);
   box-shadow: var(--shadow-3);
+}
+
+#inc-button:hover {
+  background: var(--secondaryColorLight);
+}
+
+#save-button:hover {
+  background: var(--secondaryColorDark);
 }

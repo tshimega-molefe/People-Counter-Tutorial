@@ -1,6 +1,10 @@
 // Console log shortcut:
 const log = console.log;
-// Project Code
+
 let count = 0;
 
-log(count);
+function increment() {
+  count = count + 1;
+  document.getElementById("count").innerText = count;
+  console.log(count);
+}
