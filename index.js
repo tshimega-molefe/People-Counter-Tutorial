@@ -1,5 +1,6 @@
-// Speed-up log
+// Console log shortcut:
 const log = console.log;
-// Code
+// Project Code
 let count = 0;
-let myAge = 25;
+
+log(count);
